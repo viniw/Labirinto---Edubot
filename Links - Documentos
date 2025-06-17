@@ -3,4 +3,26 @@ LINK DO DOCUMENTO GOOGLE DOCS: https://docs.google.com/document/d/1YnVrZOovLFClI
 LINK DO FLUXOGRAMA DRAW.IO: https://drive.google.com/file/d/1YiX7CcKKhxoWxw4ZRiTEa5x_c7NWhD-6/view?usp=sharing
 --> Para usar o Draw.io entrem no Drive e e instalem o complemento dele no canto direito.
 
+ESQUEMA DIAGRAMA:
+
+[Início] → [Conectar ao Edubot] → [Inicializar variáveis]
+     ↓
+[Loop Principal]
+     ↓
+[Ler sensores] → [Contar sensores abertos] → [Saída encontrada?] → Sim → [Parar robô] → [Fim]
+     ↓ Não
+[Bumper ativado?] → Sim → [Recuar e girar -45°] → [Atualizar ângulo] → [Voltar ao loop]
+     ↓ Não
+[Registrar visita atual] → [Avaliar opções de movimento]
+     ↓
+[Existe caminho não visitado?] → Sim → [Escolher caminho não visitado]
+     ↓ Não
+[Escolher caminho menos visitado] → [Girar para direção escolhida]
+     ↓
+[Mover para frente (se não for 180°)] → [sleep(100ms)] → [Voltar ao loop]
+
+
+
+
+
 LINK DO VÍDEO DE SIMULAÇÃO: https://youtu.be/WbeC9eif6us
